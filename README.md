@@ -3,9 +3,11 @@
 This Ember **3.19.0** app shows the behavior of `Ember.onerror` for different situations,
 and contrasts it with `window.onerror` and `window.addEventListener('unhandledrejection', ...)`.
 
+![screenshot](/public/screenshot.png?raw=true "screenshot")
+
 Application initializers configure all three of these handlers.
 
-Notably, `Ember.onerror` only applies to exceptions thrown in a route's `model` hook
+As shown by the app, `Ember.onerror` only applies to exceptions thrown in a route's `model` hook
 and to exceptions thrown in component properties.
 
 Most surprisingly, it does *not* apply to exceptions thrown from a component `action`.
@@ -21,8 +23,6 @@ if I remove the initializer setup of `Ember.onerror`. This suggests that a pragm
 be to avoid `Ember.onerror` altogether in favor of the `window` handlers. If that is the best path
 forward though, then the [debugging documentation](https://guides.emberjs.com/release/configuring-ember/debugging/)
 is misleading.
-
-![screenshot](/public/screenshot.png?raw=true "screenshot")
 
 ## Installation
 
