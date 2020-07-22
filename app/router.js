@@ -10,4 +10,5 @@ Router.map(function() {
   this.route('model-rejection');
   this.route('model-exception');
   this.route('property-exception-route');
+  this.route('property-rejection-route');
 });
