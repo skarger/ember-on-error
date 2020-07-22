@@ -22,6 +22,8 @@ be to avoid `Ember.onerror` altogether in favor of the `window` handlers. If tha
 forward though, then the [debugging documentation](https://guides.emberjs.com/release/configuring-ember/debugging/)
 is misleading.
 
+![screenshot](/public/screenshot.png?raw=true "screenshot")
+
 ## Installation
 
 * `git clone git@github.com:skarger/ember-on-error.git`
