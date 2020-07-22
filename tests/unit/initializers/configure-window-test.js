@@ -1,10 +1,10 @@
 import Application from '@ember/application';
 
-import { initialize } from 'ember-on-error/app/initializers/configure-ember-on-error';
+import { initialize } from 'ember-on-error/initializers/configure-window';
 import { module, test } from 'qunit';
 import { run } from '@ember/runloop';
 
-module('Unit | Initializer | configure-on-error', function(hooks) {
+module('Unit | Initializer | configure-window', function(hooks) {
   hooks.beforeEach(function() {
     this.TestApplication = Application.extend();
     this.TestApplication.initializer({

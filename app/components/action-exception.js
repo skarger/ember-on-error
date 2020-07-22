@@ -5,6 +5,6 @@ export default class ActionExceptionComponent extends Component {
   @action
   throw() {
     // NOT handled by Ember.onerror
-    throw new Error('An exception thrown from a component action.');
+    throw new Error('exception thrown from a component action.');
   }
 }

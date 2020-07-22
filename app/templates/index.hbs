@@ -1,11 +1,11 @@
-<h3>Handled by Ember.onerror</h3>
+<h3>Handled by Ember.onerror / NOT handled by window.onerror</h3>
 <ul>
   <li><LinkTo @route="model-exception">Route with Exception in model()</LinkTo></li>
   <li><LinkTo @route="property-exception-route">Route with Exception in Component property</LinkTo></li>
 
 </ul>
 
-<h3>Not handled by Ember.onerror</h3>
+<h3>NOT handled by Ember.onerror / Handled by window.onerror or window.addEventListener('unhandledrejection')</h3>
 <ul>
   <li><LinkTo @route="model-rejection">Route with Promise Rejection in model()</LinkTo></li>
   <li><LinkTo @route="property-rejection-route">Route with Promise Rejection in Component property</LinkTo></li>
